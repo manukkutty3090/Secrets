@@ -5,7 +5,9 @@
   "main": "app.js",
   "homepage": "https://manukkutty3090.github.io/Secrets/",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +19,7 @@
     "ejs": "^3.1.3",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
+    "gh-pages": "^3.2.3",
     "md5": "^2.2.1",
     "mongoose": "^5.9.16",
     "mongoose-encryption": "^2.0.2",
